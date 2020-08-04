@@ -1,0 +1,16 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/home/chris/Repos/cafe-review/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_42d20d14"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/chris/Repos/cafe-review/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0362578a"
+  }
+]

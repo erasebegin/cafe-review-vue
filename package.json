@@ -1,0 +1,31 @@
+{
+  "name": "cafe-review",
+  "version": "1.0.0",
+  "description": "cafe review website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erasebegin/cafe-review.git"
+  },
+  "author": "Chris Haupt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erasebegin/cafe-review/issues"
+  },
+  "homepage": "https://github.com/erasebegin/cafe-review#readme",
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.16.0",
+    "contentful": "^7.14.6",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.14.0",
+    "sass-loader": "^9.0.2"
+  }
+}
