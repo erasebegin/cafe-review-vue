@@ -2,15 +2,22 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "/home/chris/Repos/cafe-review/pages/about.vue",
+    "component": "/home/chris/cafe-review/pages/about.vue",
     "chunkName": "pages/about",
-    "_name": "_42d20d14"
+    "_name": "_70cb3824"
+  },
+  {
+    "name": "view-json",
+    "path": "/view-json",
+    "component": "/home/chris/cafe-review/pages/view-json.vue",
+    "chunkName": "pages/view-json",
+    "_name": "_cbca12b2"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/chris/Repos/cafe-review/pages/index.vue",
+    "component": "/home/chris/cafe-review/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_0362578a"
+    "_name": "_def9da2e"
   }
 ]

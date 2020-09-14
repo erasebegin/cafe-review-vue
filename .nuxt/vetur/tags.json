@@ -1,0 +1,14 @@
+{
+  "Featured": {
+    "description": "Auto imported from components/Featured.vue"
+  },
+  "LazyFeatured": {
+    "description": "Auto imported from components/Featured.vue"
+  },
+  "Nav": {
+    "description": "Auto imported from components/Nav.vue"
+  },
+  "LazyNav": {
+    "description": "Auto imported from components/Nav.vue"
+  }
+}

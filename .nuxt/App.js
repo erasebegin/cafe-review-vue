@@ -5,11 +5,15 @@ import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch,
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../assets/scss/custom.scss'
+import '../assets/css/global.css'
 
-import _6f6c098b from './layouts/default.vue'
+import '../node_modules/vuetify/dist/vuetify.css'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b) }
+import _6f6c098b from '../layouts/default.vue'
+import _5dccaca2 from '../layouts/partials/Footer.vue'
+import _3e22467e from '../layouts/partials/Hero.vue'
+
+const layouts = { "_default": sanitizeComponent(_6f6c098b),"_partials/Footer": sanitizeComponent(_5dccaca2),"_partials/Hero": sanitizeComponent(_3e22467e) }
 
 export default {
   render (h, props) {
@@ -157,15 +161,24 @@ export default {
       }
       this.$loading.finish()
     },
-
     errorChanged () {
-      if (this.nuxt.err && this.$loading) {
-        if (this.$loading.fail) {
-          this.$loading.fail(this.nuxt.err)
+      if (this.nuxt.err) {
+        if (this.$loading) {
+          if (this.$loading.fail) {
+            this.$loading.fail(this.nuxt.err)
+          }
+          if (this.$loading.finish) {
+            this.$loading.finish()
+          }
         }
-        if (this.$loading.finish) {
-          this.$loading.finish()
+
+        let errorLayout = (NuxtError.options || NuxtError).layout;
+
+        if (typeof errorLayout === 'function') {
+          errorLayout = errorLayout(this.context)
         }
+
+        this.setLayout(errorLayout)
       }
     },
 

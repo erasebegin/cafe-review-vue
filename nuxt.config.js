@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 
 module.exports = {
   head: {
@@ -15,10 +15,8 @@ module.exports = {
     link: [
       {
         rel: "stylesheet",
-        ref:
-          "https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css",
-        integrity:
-          "ha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I",
+        href:
+          "https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap",
         crossorigin: "anonymous",
       },
       {
@@ -28,19 +26,9 @@ module.exports = {
       },
     ],
   },
-  modules: ["bootstrap-vue/nuxt","@nuxtjs/dotenv"],
-  bootstrapVue: {
-    bootstrapCSS: false,
-    bootstrapVueCSS: false,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-    ],
-  },
-  css: ['@/assets/scss/custom.scss'],
-  plugins: ["@/plugins/contentful"]
+  buildModules: ["@nuxtjs/vuetify"],
+  modules: ["@nuxtjs/dotenv","@nuxtjs/axios"],
+  plugins: ["@/plugins/contentful"],
+  components: true,
+  css: ["~/assets/css/global.css"],
 };

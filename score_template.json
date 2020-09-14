@@ -1,0 +1,21 @@
+{
+  "environment": {
+    "noise level": 0,
+    "design": 0,
+    "seating": 0,
+    "cleanliness": 0,
+    "seating area size": ["tiny", "small", "medium", "large"]
+  },
+  "facilities": {
+    "internet": 0,
+    "bathrooms": 0,
+    "plugs": ["none", "some", "plenty"]
+  },
+  "food and drink": {
+    "coffee": 0,
+    "food": 0,
+    "variety": 0,
+    "innovation": 0,
+    "style": 0
+  }
+}

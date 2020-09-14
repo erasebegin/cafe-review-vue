@@ -1,0 +1,13 @@
+html {
+
+  /* Saved as RGB triplets so that opacity can be changed when calling variable */
+
+    --highlight: 0, 219, 80;
+    --dull: 92, 162, 118;
+    --saturated-mid: 0, 143, 52;
+    --muted: 78, 219, 129;
+    --dark: 0, 92, 34;
+    --darker: 0, 29, 11;
+  
+    font-family: "Open Sans", sans-serif;
+  }
