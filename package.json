@@ -20,7 +20,7 @@
     "lru-cache": "^6.0.0",
     "node-sass": "^4.14.1",
     "nuxt": "^2.14.5",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",
